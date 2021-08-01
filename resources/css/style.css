@@ -1,18 +1,39 @@
 /* Universal  */
 * {
     box-sizing: border-box;
+    /* border: 1px red solid !important; */
 }
 html {
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-
-h1 {
-    font-size: 3rem;
+h1,
+h2,
+h3 {
     font-weight: bold;
 }
 
-.even-zone {
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.even-background {
     background-color: rgba(180, 177, 177, 0.671);
 }
 
@@ -23,14 +44,25 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    width: 100%;
+    height: 4rem;
 }
 
 #colmar-title {
     font-weight: bold;
 }
 
+.logo {
+    font-size: 1.3rem;
+}
+
 .logo img {
     vertical-align: middle;
+    height: 2rem;
 }
 
 
@@ -44,34 +76,34 @@ nav ul li {
 /* Banner Section */
 .banner {
     padding: 2rem 1.5rem;
-    display: flex;
+    position: relative;
+    top: 4rem;
+    display: inline-flex;
     width: 100%;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 
 .banner .images-container {
-    width: 60%;
+    flex-basis: 60%;
     overflow: hidden;
+    margin-right: 1rem;
+    flex-shrink: 1;
 }
 
 .banner .images-container img {
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
-/* Banner Section  */
-
-/* .banner-content {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1.5rem;
-} */
-
 .banner-content {
-    position: relative;
-    top: 7.5rem;
-    margin-left: 3rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 5rem 0rem 0rem 0rem; */
+    /* margin-left: 1.5rem; */
+
 }
 
 .banner-content p {
@@ -89,22 +121,30 @@ nav ul li {
     background-color: rgb(78, 77, 77);
     color: white;
     text-align: center;
-    width: 70%;
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.7rem;
 }
 
-/* Info section  */
+/* Info left section  */
 
 .info {
-    padding: 2rem 0 2rem 1.5rem ;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    display: flex;
 }
+
+/* Info left section  */
 
 .info-left-container {
     width: 60%;
+    padding-right: 1.5rem;
 }
 
 .info-left-container .images-container {
     width: 100%;
+    height: 50%;
     overflow: hidden;
 }
 
@@ -115,6 +155,105 @@ nav ul li {
 }
 
 .info-left-content {
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
+.info-left-content h2 {
+    margin-bottom: 1.5rem ;
+}
+
+.info-left-content p {
+    font-size: 1.5rem;
+}
+
+.info-left-content span {
+    display: block;
+   margin-top: 10rem;
+}
+/* Info right section  */
+
+.info-right-container {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-right-gallery {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+}
+
+#orientation-date {
+    padding-top: 0;
+}
+
+.info-right .images-container {
+    width: 35%;
+    overflow: hidden;
+}
+
+.info-right .images-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-right-content {
+    padding: 2.7rem;
+}
+
+.info-right-content p {
+    margin: 0.5rem 0;
+}
+
+/* Course section  */
+.course {
+    padding: 2rem 3.5rem;
+}
+
+.course-title h1 {
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-card {
+    background-color: white;
+    flex-basis: 31%;
+    margin: 0 1rem;
+    margin-top: 2rem;
+}
+
+.course-card .images-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.course-card .images-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.course-content {
+    padding: 1rem 1.5rem 1.5rem 1rem;
+}
+
+
+.course-content h4 {
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+    font-weight: 300;
+    color: grey;
+}
+
+.course-content p {
+    font-weight: 300;
+    color: grey;
+}
