@@ -1,0 +1,120 @@
+/* Universal  */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.even-zone {
+    background-color: rgba(180, 177, 177, 0.671);
+}
+
+/* Header with Logo and Nav Bar section  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#colmar-title {
+    font-weight: bold;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+
+
+/* Banner Section */
+.banner {
+    padding: 2rem 1.5rem;
+    display: flex;
+    width: 100%;
+}
+
+.banner .images-container {
+    width: 60%;
+    overflow: hidden;
+}
+
+.banner .images-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Banner Section  */
+
+/* .banner-content {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+} */
+
+.banner-content {
+    position: relative;
+    top: 7.5rem;
+    margin-left: 3rem;
+}
+
+.banner-content p {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.banner-content h1,
+.banner-content p {
+    margin: 2.5rem 0;
+}
+
+.btn-main {
+    padding: 0.5rem 0;
+    background-color: rgb(78, 77, 77);
+    color: white;
+    text-align: center;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+/* Info section  */
+
+.info {
+    padding: 2rem 0 2rem 1.5rem ;
+}
+
+.info-left-container {
+    width: 60%;
+}
+
+.info-left-container .images-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.info-left-container .images-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-left-content {
+    padding-top: 2rem;
+}
+
